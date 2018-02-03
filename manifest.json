@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+	"name": "ACE Tabs",
+	"description": "Customise tabs",
+	"version": "1.0",
+  
+	"browser_action": {
+		"default_popup": "acetabs_popup.html",
+		"default_icon": "icon.png",
+		"default_title": "Open ACE tabs menu"
+	},
+	"chrome_url_overrides": {
+		"newtab": "acetabs_page.html"
+	  },
+	"commands": {
+		"_execute_browser_action": {
+		  "suggested_key": {
+			"default": "Ctrl+Shift+F",
+			"mac": "MacCtrl+Shift+F"
+		  },
+		  "description": "Opens acetabs.html"
+		}
+	},
+	"permissions": [
+		"activeTab",
+		"storage",
+		"bookmarks"
+	]
+}
