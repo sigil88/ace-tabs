@@ -3,36 +3,43 @@
         <meta charset="utf-8">
         <title>&#127836; New ACE tab &#127836;</title>
         <link rel="stylesheet" href="css/bulma.css">
+        <link rel="stylesheet" href="css/styles.css">
         <script defer src="js/fontawesome-v5.0.6.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
         <script src="js/acetabs.js"></script>
     </head>
     <body>
-            <section class="hero">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title"><i class="fab fa-rebel"></i> Sup ACE</h1>
-                        <p>Pin new bookmark</p>
-                    </div>
+        <section class="hero is-grey">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title"><i class="fab fa-rebel"></i> Greetings REBEL</h1>
+                    <h2 class="is-subtitle"></h2>
+                    <hr>
                 </div>
-            </section>
-        <div class="container">
-            <div class="columns">
-                <div class="column">
-                    <input id="pin-url" class="input is-inline" type="url">
-                    <button id="pin" class="button is-primary">Store</button>
-                </div>
-                <div class="column is-2">
-                    <button class="button is-warning" id="check-storage">What's stored?</button>
-                </div>
-            </div>
-            <div class="columns">
-                <div class="column">
-                    <div class="pinned">
-
+                <div class="container">
+                    <div class="columns">
+                        <div class="column">
+                            <input id="pin-url" class="input is-inline" type="url" placeholder="Enter URL" />
+                            <button id="pin" class="button is-primary">Pin it!</button>
+                        </div>
+                        <div class="column is-2">
+                            <button class="button is-warning" id="check-storage">What's stored?</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="pinned__container">
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
        
     </body>
 </html>
